@@ -11,18 +11,18 @@ import random
 ## personal chatbot for response ###
 ####################################
 
-# chat_bot_train = TrainData(data_file_path = 'data/personal_assistant.json', save_file_path = 'model/personal_assistant.pth')
-# chat_bot_train.trainModel()
+chat_bot_train = TrainData(data_file_path = 'data/personal_assistant.json', save_file_path = 'model/personal_assistant.pth')
+chat_bot_train.trainModel()
 
-# chat_bot_response = BasicChatBot(intent_file_path = 'data/personal_assistant.json' , model_file_path = "model/personal_assistant.pth")
+chat_bot_response = BasicChatBot(intent_file_path = 'data/personal_assistant.json' , model_file_path = "model/personal_assistant.pth")
 
-# while True:
-#     user_message = input('User Message : ')
-#     if user_message.lower() == 'exit':
-#         break
-#     else:
-#         bot_response, _ = chat_bot_response.get_bot_response(user_message)
-#         print('Bot Response : ',bot_response.get('responses',[{}])[0].get('answer', 'Sorry i am still learning'))
+while True:
+    user_message = input('User Message : ')
+    if user_message.lower() == 'exit':
+        break
+    else:
+        bot_response, _ = chat_bot_response.get_bot_response(user_message)
+        print('Bot Response : ',bot_response.get('responses',[{}])[0].get('answer', 'Sorry i am still learning'))
 
 ################################################
 ## mental health doctor chatbot for response ###
