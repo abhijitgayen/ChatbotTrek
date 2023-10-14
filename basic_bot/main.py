@@ -3,17 +3,15 @@ from utils.model_train import TrainData
 
 import random
 
-
-# chat_bot_train = TrainData()
-# chat_bot_train.trainModel()
-
 ####################################
 ## personal chatbot for response ###
 ####################################
 
+# train model
 chat_bot_train = TrainData(data_file_path = 'data/personal_assistant.json', save_file_path = 'model/personal_assistant.pth')
 chat_bot_train.trainModel()
 
+# test model
 chat_bot_response = BasicChatBot(intent_file_path = 'data/personal_assistant.json' , model_file_path = "model/personal_assistant.pth")
 
 while True:
@@ -28,9 +26,11 @@ while True:
 ## mental health doctor chatbot for response ###
 ################################################
 
+# train model
 # chat_bot_train = TrainData(data_file_path = 'data/mental_health_doctor.json', save_file_path = 'model/mental_health_doctor.pth')
 # chat_bot_train.trainModel()
 
+# test model
 # chat_bot_response = BasicChatBot(intent_file_path = 'data/mental_health_doctor.json' , model_file_path = "model/mental_health_doctor.pth")
 
 # while True:
