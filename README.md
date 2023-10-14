@@ -55,5 +55,5 @@ Solving these problems often involves a combination of natural language processi
 
 # Our Implementation of Chatbot
 
-**[NeuraLite Chatbot](https://github.com/abhijitgayen/ChatbotTrek/tree/main/basic_bot)**
+**[NeuraLite Chatbot](https://github.com/abhijitgayen/ChatbotTrek/tree/main/NeuraLite_Chatbot)**
 
